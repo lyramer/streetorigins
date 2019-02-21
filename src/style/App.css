@@ -1,0 +1,46 @@
+.mapStyle {
+  height: 100vh;
+}
+
+body {
+  font-family: Courier, monospace;
+  background: #6b96e6;
+}
+
+.mapContainer {
+  width: calc(100% - 64px);
+}
+
+.leaflet-control-scale-line {
+  border: none;
+  font-size: 18px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  background: transparent none repeat scroll 0% 0%;
+  color: white;
+  box-shadow: none;
+  text-align: center;
+}
+
+div[id^="nav_"] {
+  height: 0px !important;
+}
+
+div[class^="sidenav---sidenav-subnavitem"] i {
+  padding-left: 10px;
+}
+
+.latlon > input {
+  width: 100%;
+}
+
+.add-pin i {
+  font-size: 0.7em;
+  padding-left: 8px;
+}
+
+.latlon-modal .error {
+  font-size: 0.9em;
+  color: #a02d1b;
+  padding-bottom: 15px;
+}
