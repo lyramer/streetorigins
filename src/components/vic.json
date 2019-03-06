@@ -1,0 +1,132 @@
+{
+  "streets": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Douglas Street",
+          "origin": "British",
+          "story": "Lorem Ipsum Dolores Et"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [-123.3773201, 48.4550156],
+            [-123.3775344, 48.4551087]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hillside Avenue",
+          "origin": "British",
+          "story": "Lorem Ipsum Dolores Et"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [[-123.338179, 48.4437294], [-123.3366166, 48.4443595]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Johnson Street",
+          "origin": "British",
+          "story": "Lorem Ipsum Dolores Et"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [-123.3728867, 48.4281853],
+            [-123.372876, 48.4281866],
+            [-123.3724515, 48.4282399]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "McKenzie Avenue",
+          "origin": "British",
+          "story": "Lorem Ipsum Dolores Et"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [[-123.3178174, 48.4686539], [-123.3184122, 48.468636]]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "North Dairy Road",
+          "origin": "British",
+          "story": "Lorem Ipsum Dolores Et"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [-123.3434865, 48.4483388],
+            [-123.3425853, 48.4483102],
+            [-123.3415446, 48.4482817]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Pandora Avenue",
+          "origin": "British",
+          "story": "Lorem Ipsum Dolores Et"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [-123.3696871, 48.4284901],
+            [-123.3703687, 48.4284892],
+            [-123.3707283, 48.4284785]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Shelbourne Street",
+          "origin": "British",
+          "story": "Lorem Ipsum Dolores Et"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [-123.3332563, 48.4481624],
+            [-123.3332664, 48.4478836],
+            [-123.3336852, 48.4339522],
+            [-123.3336434, 48.4334905],
+            [-123.3336332, 48.4332006],
+            [-123.3334503, 48.4328925],
+            [-123.3330748, 48.4324512]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sinclair Road",
+          "origin": "British",
+          "story": "Lorem Ipsum Dolores Et"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [-123.30763, 48.4668744],
+            [-123.3074566, 48.4667519],
+            [-123.3073252, 48.4666415],
+            [-123.3071838, 48.4665116],
+            [-123.307078, 48.4664581]
+          ]
+        }
+      }
+    ]
+  }
+}
