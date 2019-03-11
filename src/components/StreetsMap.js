@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Map, TileLayer, ScaleControl, GeoJSON, Popup } from "react-leaflet";
 import { mapboxAccessToken } from "../mapboxAccessToken.json";
-import { streets } from "./vic.json";
+import { FeatureList } from "./vicv2.json";
+import { fetchOrigin, fetchStory } from "../helpers.js";
 
 class StreetsMap extends Component {
   constructor() {
@@ -11,7 +12,7 @@ class StreetsMap extends Component {
     return {
       color: "#006400",
       weight: 7,
-      opacity: 0.65
+      opacity: 0
     };
   }
 
@@ -20,23 +21,33 @@ class StreetsMap extends Component {
   };
 
   onEachFeature = (feature, layer) => {
+    const { name, origin, type, story } = feature.properties;
+    console.log("i am evil");
     layer.bindPopup(
-      "<div>" +
+      "<div class='popup-header'>" +
         "<h3>" +
-        feature.properties.name +
+        name +
         "</h3>" +
-        feature.properties.origin +
+        fetchOrigin(origin) +
+        "</div>" +
+        "<div class='popup-body'>" +
+        fetchStory(story) +
         "</div>",
       {
-        closeButton: false
+        closeButton: true
       }
     );
-    layer.on("mouseover", function() {
-      layer.openPopup();
-    });
-    layer.on("mouseout", function() {
-      layer.closePopup();
-    });
+    // dropping this for now as the roads are in pieces
+    // ugh
+    // // highlight road on hover
+    // layer.on("mouseover", function() {
+    //   this.setStyle({
+    //     opacity: 0.7 //or whatever style you wish to use;
+    //   });
+    // });
+    // layer.on("mouseout", function() {
+    //   this.setStyle({ opacity: 0 });
+    // });
   };
 
   render() {
@@ -66,6 +77,6 @@ class StreetsMap extends Component {
 }
 
 function getStreets() {
-  return streets;
+  return FeatureList;
 }
 export default StreetsMap;

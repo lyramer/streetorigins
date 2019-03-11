@@ -6,8 +6,7 @@
 }
 
 body {
-  font-family: Courier, monospace;
-  background: #6b96e6;
+  font-family: "Raleway", sans-serif, monospace;
 }
 
 .leaflet-control-scale-line {
@@ -20,26 +19,6 @@ body {
   box-shadow: none;
   text-align: center;
 }
-
-div[id^="nav_"] {
-  height: 0px !important;
-}
-
-div[class^="sidenav---sidenav-subnavitem"] i {
-  padding-left: 10px;
-}
-
-.latlon > input {
-  width: 100%;
-}
-
-.add-pin i {
-  font-size: 0.7em;
-  padding-left: 8px;
-}
-
-.latlon-modal .error {
-  font-size: 0.9em;
-  color: #a02d1b;
-  padding-bottom: 15px;
+a:active {
+  outline: none;
 }

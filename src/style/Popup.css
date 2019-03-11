@@ -1,18 +1,28 @@
-.leaflet-popup-content-wrapper {
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
   background-color: #eee;
 }
 
 .leaflet-popup-content-wrapper h3 {
   font-size: 1.1em;
+  display: inline-block;
+  font-weight: 500;
+  color: #000000;
 }
 
 .leaflet-popup-content-wrapper h3::after {
-  padding-left: 5px;
+  padding: 0px 5px;
   content: "|";
+}
+
+.leaflet-popup-content-wrapper .popup-header {
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .leaflet-popup-content-wrapper .leaflet-popup-content {
 }
 
 .leaflet-popup-tip-container {
+  color: #eee;
 }
