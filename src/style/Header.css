@@ -5,3 +5,20 @@
 .navbar {
   height: 77px;
 }
+
+.navbar .btn {
+  background: none;
+  border: none;
+  outline: none;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+}
+
+.navbar .btn:focus,
+.navbar .btn.focus,
+.navbar .btn:active {
+  outline: none !important;
+  background: none !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+  box-shadow: none !important;
+}

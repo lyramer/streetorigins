@@ -32,6 +32,15 @@
   padding-left: 0;
 }
 
+.analytics .header .dropdown .btn:focus,
+.analytics .header .dropdown .btn.focus,
+.analytics .header .dropdown .btn:active {
+  outline: none !important;
+  background: none !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+  box-shadow: none !important;
+}
+
 .analytics .header .dropdown-toggle::after {
   margin: 0;
   margin-top: 0.6em;
