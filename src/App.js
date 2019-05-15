@@ -95,7 +95,9 @@ class App extends Component {
           toggleAnalytics={this.toggleAnalytics}
           toggleLoginModal={this.toggleLoginModal}
         />
-        {this.state.analytics && <Analytics />}
+        {this.state.analytics && (
+          <Analytics toggleAnalytics={this.toggleAnalytics} />
+        )}
         <div className={"mapContainer"} style={mapContainerStyle}>
           <StreetsMap
             viewport={this.state.viewport}

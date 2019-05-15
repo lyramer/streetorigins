@@ -37,6 +37,9 @@ class Analytics extends Component {
   render() {
     return (
       <div className="analytics">
+        <div className="close-button" onClick={this.props.toggleAnalytics}>
+          X
+        </div>
         <div className="header">
           <h1>Street Analytics</h1>
           <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
