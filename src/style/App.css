@@ -1,7 +1,7 @@
 .mapStyle,
 .leaflet-container,
 .mapContainer {
-  height: 100vh;
+  height: calc(100vh - 77px);
   width: 100%;
 }
 
@@ -21,4 +21,9 @@ body {
 }
 a:active {
   outline: none;
+}
+
+.btn-secondary.focus,
+.btn-secondary:focus {
+  box-shadow: none;
 }

@@ -1,28 +1,60 @@
 import React, { Component } from "react";
 import { Map, TileLayer, ScaleControl, GeoJSON, Popup } from "react-leaflet";
 import { mapboxAccessToken } from "../mapboxAccessToken.json";
-import { FeatureList } from "./vicv2.json";
+import { FeatureList } from "../data/victoria.json";
 import { fetchOrigin, fetchStory } from "../helpers.js";
+import { withFirebase } from "./Firebase";
+import { FeatureList as Vic } from "../data/victoria_bounds.json";
 
 class StreetsMap extends Component {
   constructor() {
     super();
+    this.state = {
+      loading: false,
+      streets: []
+    };
   }
   getStyle(feature, layer) {
     return {
       color: "#006400",
-      weight: 7,
+      weight: 14,
       opacity: 0
     };
   }
+
+  getStreets() {
+    //if (this.props.analytics) return Vic;
+    return FeatureList;
+  }
+
+  // componentDidMount() {
+  //   this.setState({ loading: true });
+
+  //   this.props.firebase.FeatureList().on("value", snapshot => {
+  //     const featureObject = snapshot.val();
+  //     console.log(featureObject);
+  //     const streets = Object.keys(featureObject).map(key => ({
+  //       ...featureObject[key],
+  //       type: key
+  //     }));
+
+  //     this.setState({
+  //       streets: streets,
+  //       loading: false
+  //     });
+  //   });
+  // }
+
+  // componentWillUnmount() {
+  //   this.props.firebase.FeatureList().off();
+  // }
 
   onViewportChanged = viewport => {
     console.log("Zoom level: " + this.props.viewport.zoom);
   };
 
   onEachFeature = (feature, layer) => {
-    const { name, origin, type, story } = feature.properties;
-    console.log("i am evil");
+    const { name, origin, type, story, municipality } = feature.properties;
     layer.bindPopup(
       "<div class='popup-header'>" +
         "<h3>" +
@@ -66,7 +98,7 @@ class StreetsMap extends Component {
 
         <ScaleControl imperial={false} maxWidth={200} />
         <GeoJSON
-          data={getStreets()}
+          data={this.getStreets()}
           style={this.getStyle}
           onEachFeature={this.onEachFeature}
         />
@@ -76,7 +108,4 @@ class StreetsMap extends Component {
   }
 }
 
-function getStreets() {
-  return FeatureList;
-}
-export default StreetsMap;
+export default withFirebase(StreetsMap);

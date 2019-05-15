@@ -1,3 +1,7 @@
 .nav-item:focus {
   border: none;
 }
+
+.navbar {
+  height: 77px;
+}

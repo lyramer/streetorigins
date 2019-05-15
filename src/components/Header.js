@@ -7,10 +7,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  Button
 } from "reactstrap";
 
 class Header extends Component {
@@ -41,9 +38,7 @@ class Header extends Component {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#" onClick={this.props.toggleAnalyticModal}>
-                Analytics
-              </NavLink>
+              <Button onClick={this.props.toggleAnalytics}>Analytics</Button>
             </NavItem>
             <NavItem>
               <NavLink href="#" onClick={this.props.toggleAboutModal}>
