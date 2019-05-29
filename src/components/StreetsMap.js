@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { Map, TileLayer, ScaleControl, GeoJSON, Popup } from "react-leaflet";
+import { Map, TileLayer, ScaleControl, GeoJSON } from "react-leaflet";
 import { mapboxAccessToken } from "../mapboxAccessToken.json";
 import { FeatureList } from "../data/victoria.json";
 import { fetchOrigin, fetchStory } from "../helpers.js";
 import { withFirebase } from "./Firebase";
-import { FeatureList as Vic } from "../data/victoria_bounds.json";
 
 class StreetsMap extends Component {
   constructor() {
@@ -54,7 +53,7 @@ class StreetsMap extends Component {
   };
 
   onEachFeature = (feature, layer) => {
-    const { name, origin, type, story, municipality } = feature.properties;
+    const { name, origin, story } = feature.properties;
     layer.bindPopup(
       "<div class='popup-header'>" +
         "<h3>" +

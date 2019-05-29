@@ -11,7 +11,9 @@ class ContactModal extends Component {
       >
         <ModalHeader toggle={this.props.toggle}>streetorigin.com</ModalHeader>
         <ModalBody>
-          <a href="mailto:parker.andrew@telus.net">Send Us An Email</a>
+          <a href="mailto:streetoriginalpha@gmail.com">
+            streetoriginalpha@gmail.com
+          </a>
         </ModalBody>
         <ModalFooter>
           <Button color="primary" onClick={this.props.toggle}>

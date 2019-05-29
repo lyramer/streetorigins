@@ -27,3 +27,16 @@ a:active {
 .btn-secondary:focus {
   box-shadow: none;
 }
+
+.modal-body a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.navbar ul.navbar-nav {
+  margin-right: 40px;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  padding: 6px 6px 0 0;
+}
