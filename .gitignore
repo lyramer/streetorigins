@@ -7,4 +7,4 @@ env.json
 .firebase/*
 build
 env.js
-
+.firebase

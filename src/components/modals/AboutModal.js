@@ -41,14 +41,13 @@ class AboutModal extends Component {
             (Resident, Doctor, Architect, Lawyer etc...)
           </p>
           <p>
-            Note: Certain steps were taken to ensure fairness of categorization.
-            Due to the nature of colonization, a name defined as "Canadian"
-            represents anything which is named after a feature of the country or
-            a person born in Canada. For statistics reasons, names from anyone
-            who settled the region but moved from a different country are
-            considered to originate from that country. Street Origin is not
-            interested in establishing a political agenda, and only aims to
-            provide a clear way to visualize historic information.
+            Note: While this project is focused on recording the streets in a
+            handful of municipalities, these streets were all laid on unceded
+            Coast Salish territories. In classifying the data, we chose to
+            define "Canadian" as representing anything which is named after a
+            feature of the country or a person born in Canada. For those who
+            settled the region but moved from a different country, we considered
+            them to originate from that country.
           </p>
           <p>
             The way streets are named speaks volumes about a region and its
@@ -65,7 +64,8 @@ class AboutModal extends Component {
           </p>
           <p>
             {" "}
-            Laurie <br /> Dominic <br />
+            Laurie <br />
+            Dominic <br />
             Josh <br />
             Sean <br />
             Will
