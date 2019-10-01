@@ -59,3 +59,8 @@ export function fetchStory(val) {
   if (val === null) return "Unknown";
   return val;
 }
+
+export function fetchType(val) {
+  if (val === null) return "Unknown";
+  return dataMap.type[val];
+}
